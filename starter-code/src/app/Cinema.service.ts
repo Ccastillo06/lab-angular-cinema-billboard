@@ -12,6 +12,6 @@ export class CinemaService {
   }
 
   getMovie(id) {
-    return this.movies[id-1];
+    return this.movies.filter(e => e.id == id )[0];
   }
 }

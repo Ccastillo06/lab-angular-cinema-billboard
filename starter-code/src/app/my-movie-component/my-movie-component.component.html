@@ -1,0 +1,12 @@
+<div class="movie-detail">
+  <h2>Room {{movie.room}}</h2>
+  <h2>{{movie.title}}</h2>
+  <img [src]="movie.poster" alt="poster" width="250">
+  <p>Genres: {{movie.genres}}</p>
+  <p>Year: {{movie.year}}</p>
+  <p>Director: {{movie.director}}</p>
+  <p>Actors: {{movie.actors}}</p>
+  <p>Schedule: {{movie.hours}}</p>
+  <p>Synopsis: {{movie.synopsis}}</p>
+  <a [routerLink]="['']"><button>Home</button></a>
+</div>
