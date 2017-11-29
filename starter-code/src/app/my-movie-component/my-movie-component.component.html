@@ -1,12 +1,18 @@
 <div class="movie-detail">
-  <h2>Room {{movie.room}}</h2>
-  <h2>{{movie.title}}</h2>
-  <img [src]="movie.poster" alt="poster" width="250">
+  <div class="poster">
+    <h3>Room {{movie.room}}</h3>
+    <h3>{{movie.title}}</h3>
+    <img [src]="movie.poster" alt="poster">
+  </div>
+  <div class="info">
   <p>Genres: {{movie.genres}}</p>
   <p>Year: {{movie.year}}</p>
   <p>Director: {{movie.director}}</p>
   <p>Actors: {{movie.actors}}</p>
   <p>Schedule: {{movie.hours}}</p>
   <p>Synopsis: {{movie.synopsis}}</p>
-  <a [routerLink]="['']"><button>Home</button></a>
+  <div class="home-btn">
+    <a [routerLink]="['']"><button class="btn">Home</button></a>
+  </div>
+  </div>
 </div>

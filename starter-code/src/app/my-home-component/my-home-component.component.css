@@ -1,0 +1,17 @@
+.movie-list {
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 25px;
+}
+
+.movie {
+  flex-basis: 15%;
+}
+
+.movie img {
+  border-radius: 10px;
+  width: 180px;
+  height: 300px;
+}
